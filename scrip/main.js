@@ -138,7 +138,7 @@ function render() {
       book.save();
       render();
     });
-    toggle.innerHTML = 'Toggle';
+    toggle.innerHTML = 'Mark as read';
 
     td.append(remove);
     td.appendChild(document.createTextNode(' | '));
