@@ -13,7 +13,11 @@
     "rules": {
       "no-shadow": "off",
       "no-param-reassign": "off",
-      "eol-last": "off"
+      "eol-last": "off",
+      "arrow-parens": "off",
+      "func-names": "off"
+      // "wrap-iife": "off",
+      // "no-return-assign": "off"
     },
     "ignorePatterns": [
       "dist/",
