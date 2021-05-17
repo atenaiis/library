@@ -13,37 +13,59 @@
         <header class="text-center text-dark my-4">
         <h1> MY LIBRARY </h1>
         </header>
-        <button class="new-book" id="d-form" type="button"> New Book</button>
-        <!-- Book Form -->
-        <form id='formBook' class="d-none">
-          <p class="alert alert-dark m-2"> Title, Author and Pages fields should not be Blank!</p>
-          <label for="title">Title:</label><br>
-          <input type="text" id="title" name="title"><br>
-          <label for="author">Author:</label><br>
-          <input type="text" id="author" name="author"><br>
-          <label for="pages">Pages:</label><br>
-          <input type="number" id="pages" name="pages"><br>
-          <input type="checkbox" id="read" name="read">
-          <label for="read">I've already read it.</label><br><br>
-          <input type="button" id='submit-form' value="Submit">
-          
-        </form>
-
-        <!-- Display Books -->
-        <table class="" id="">
-          <tr id="booksLabel">
-            <th>Title</th>
-            <th>Author</th>
-            <th>Pages</th>
-            <th>Status</th>
-            <th>Remove</th>
-            <th>Change Status</th>
-          </tr>
-      
+        <details open>
+            <summary class="add">Add a new book</summary>
+            <div class="form-wrapper">
+                <form class="form">
+                    <input
+                        type="text"
+                        name="title"
+                        id="title"
+                        placeholder="Title"
+                        required
+                    />
+                    <input
+                        type="text"
+                        name="author"
+                        id="author"
+                        placeholder="Author"
+                        required
+                    />
+                    <input
+                        type="number"
+                        name="pages"
+                        id="pages"
+                        width="20px"
+                        placeholder="Pages"
+                        required
+                    />
+                    <input
+                        type="date"
+                        name="date"
+                        id="date"
+                        placeholder="Date"                 
+                    />
+                    <input type="submit" value="Add" />
+                </form>
+            </div>
+        </details>
+        <hr />
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Date</th>
+                    <th>No. of pages</th>
+                    <th>Read</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="body"></tbody>
         </table>
- 
   </main>
 
-    <script type="module" src="scripts/main.js"></script>
+  <script src="./main.js"></script>
   </body>
 </html>
