@@ -40,7 +40,11 @@ const Book = (function () {
       format: (book) => book[attribute],
       classList: () => '',
     };
-
+    function readButtonText(index) {
+      let text = '';
+      text = (myLibrary[index].read) ? 'Set as Unread' : 'Set as Read';
+      return text;
+    }
     const formatters = {
       date: {
         format: (book) => book.date.toISOString().split('T')[0],
@@ -169,8 +173,9 @@ form.onsubmit = (e) => {
     author: author.value,
     date: date.value,
     pages: pages.value,
+   read :read.checked,
   });
-
+git 
   e.target.reset();
 
   render();
