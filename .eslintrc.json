@@ -15,7 +15,8 @@
       "no-param-reassign": "off",
       "eol-last": "off",
       "arrow-parens": "off",
-      "func-names": "off"
+      "func-names": "off",
+      "no-undef": "off"
       // "wrap-iife": "off",
       // "no-return-assign": "off"
     },
