@@ -173,9 +173,9 @@ form.onsubmit = (e) => {
     author: author.value,
     date: date.value,
     pages: pages.value,
-   read :read.checked,
+    read: read.checked,
   });
-git 
+  git;
   e.target.reset();
 
   render();
